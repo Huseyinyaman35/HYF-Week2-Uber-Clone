@@ -1,0 +1,1150 @@
+@import url(//db.onlinewebfonts.com/c/11469c307f0de6481e3a04cc5d54ae93?family=Uber+Move+Text);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Uber Move Text', Helvetica, sans-serif;
+}
+
+/* ! Navbar - Header */
+
+header {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  padding: 0 100px;
+  background: #000000;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  position: relative;
+}
+
+header nav ul li.sub-menu::before {
+  content: '\f078';
+  font-family: fontAwesome;
+  font-size: 12px;
+  position: absolute;
+  line-height: 50px;
+  color: #fff;
+  top: -5px;
+  right: 5px;
+}
+
+header nav ul li.sub-menu.active::before {
+  content: '\f077';
+}
+
+header nav ul li ul {
+  position: absolute;
+  top: 52px;
+  left: 0;
+
+  background: #fff;
+  display: none;
+  transition: 1s;
+  box-shadow: 0 0 10px 0px black;
+  /* overflow: scroll; */
+}
+
+header nav ul li.active ul {
+  display: block;
+}
+
+header nav ul li ul li {
+  display: block;
+  width: 200px;
+}
+
+header nav ul li ul li a {
+  color: #000;
+  border-radius: 0;
+}
+
+header nav ul li ul li a:hover {
+  background-color: #f6f6f6;
+}
+
+header nav ul li a {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  display: block;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+header nav ul li a:hover {
+  background-color: #545454;
+}
+
+#login-icon {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 0 5px;
+}
+
+.li-with-icon a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s;
+}
+
+.li-with-icon a svg {
+  color: #fff;
+}
+
+.menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+
+.login-icon {
+  color: #fff;
+  float: right;
+  display: none;
+}
+
+.signup-button a {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  display: none;
+}
+
+#signup-button {
+  background-color: #fff;
+  border-radius: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+#signup-button:hover {
+  background-color: rgb(224, 222, 222);
+}
+
+#signup-button a {
+  color: #000;
+  font-weight: bold;
+}
+
+/* ! Alert Bar */
+
+.alert {
+  /* border: 1px solid red; */
+  height: 186px;
+  width: 100%;
+  padding: 20px 180px;
+  background-color: #eff3fe;
+  position: relative;
+}
+
+.alert h3 {
+  font-size: 18px;
+  font-family: 'Uber Move Text', Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #1e54c5;
+}
+
+.alert p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #1e54c7;
+}
+
+.alert a {
+  display: block;
+  color: #1e54c7;
+  font-size: 14px;
+}
+
+.alert .btn-close {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 150px;
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  text-decoration: none;
+}
+
+/* ! Banner-Image Section */
+
+.banner-image {
+  height: auto;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.container-options {
+  background-color: #fff;
+  height: 580px;
+  width: 38%;
+  position: absolute;
+  top: 60px;
+  left: 12%;
+}
+
+.image-div {
+  height: 690px;
+  background-image: url(https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1899,h_834/v1613521435/assets/bc/0529b6-c37a-416b-9907-2cb44c4c2888/original/Earner_Home_bg_desktop2x.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.options-div {
+  background-color: #fff;
+  height: 121px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+}
+
+.options-div div {
+  height: 120px;
+  width: 105px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.options-div div:hover {
+  cursor: pointer;
+}
+
+.options-div div span {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin: 8px;
+}
+
+.options-div div img {
+  height: 24px;
+}
+
+.options-div div:nth-child(1) {
+  position: relative;
+}
+
+.options-div div:nth-child(1)::after {
+  /* border-bottom: 5px solid black; */
+  content: '';
+  height: 5px;
+  background-color: black;
+  width: 75%;
+  position: absolute;
+  top: 115px;
+  left: 10px;
+}
+
+.signup-div {
+  padding: 48px;
+  height: 422px;
+  /* border: 1px solid red; */
+}
+
+.signup-div h1 {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 64px;
+  margin-bottom: 20px;
+}
+
+.signup-div span {
+  font-size: 16px;
+  font-size: 300;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.signup-div .signup {
+  padding: 15px 20px;
+  display: block;
+  width: 160px;
+  background-color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.underline {
+  position: relative;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+  text-decoration: none;
+}
+
+.underline::after {
+  content: '';
+  height: 1px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.5s;
+  width: 0;
+}
+
+.underline:hover::after {
+  width: 100%;
+}
+
+/* ! Uber For Business */
+
+.uber-for-business {
+  background-image: url(https://www.uber-assets.com/image/upload/v1613106985/assets/0e/47aa71-35cb-459a-a975-78c61ea300e2/original/HP-U4B-NYC-bkg.png);
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 5px solid orange; */
+}
+
+.uber-for-business div {
+  height: 172px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.uber-for-business div h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.uber-for-business div a {
+  padding: 14px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 110px;
+  margin-top: 30px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.uber-for-business div a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ! Focused On Safety Section */
+
+.focused-on-safety {
+  /* border: 1px solid red; */
+  padding: 50px 125px;
+}
+
+.focused-on-safety h2 {
+  padding-left: 64px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.focused-on-safety .focused-div {
+  /* border: 1px solid yellow; */
+  padding: 32px 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.focused-div img {
+  width: 100%;
+}
+
+.focused-div h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 20px 0 15px 0;
+}
+
+.focused-div p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.focused-div a {
+  font-size: 14px;
+  margin-right: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+  position: relative;
+}
+
+.focused-div a::after {
+  content: '';
+  height: 1px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.5s;
+  width: 0;
+}
+
+.focused-div a:hover::after {
+  width: 100%;
+}
+
+/* ! Focused on Safety Options Section */
+
+.focus-on-container {
+  height: auto;
+  /* background: yellow; */
+  padding: 32px 180px;
+}
+
+.column-wrapper {
+  /* border: 3px solid orange; */
+  display: flex;
+}
+
+.column {
+  /* border: 1px solid red; */
+  min-width: 270px;
+}
+
+.column h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.column p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.column a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+  position: relative;
+}
+
+.column a::after {
+  content: '';
+  height: 1px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.5s;
+  width: 0;
+}
+
+.column a:hover::after {
+  width: 100%;
+}
+
+/* ! Download Section */
+
+.download-section {
+  padding: 40px 180px;
+  /* border: 1px solid red; */
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.download-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.download-section .uber-div {
+  /* border: 1px solid blue; */
+  padding: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.uber-div a {
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  background-color: white;
+  padding: 30px 5px 30px 20px;
+  display: block;
+  height: auto;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.uber-div a img {
+  height: 150px;
+  width: 150px;
+}
+
+.uber-div span {
+  font-size: 24px;
+  margin-right: 20px;
+  /* border: 1px solid red; */
+}
+
+.uber-div i {
+  /* color:red; */
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+.uber-div a:hover i {
+  /* color: red; */
+  margin-left: 10px;
+}
+
+/* ! Sign Up Section */
+
+.signup-section > div {
+  padding: 0 180px;
+  background-color: #fff;
+  height: 213px;
+  /* border: 3px solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.signup-section a {
+  /* border: 1px solid red; */
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  /* border: 3px solid yellow; */
+  padding: 40px 0;
+}
+
+.signup-section .div-signup {
+  /* border: 3px solid blue; */
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.sign {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* ! Footer */
+
+footer {
+  /* border: 3px solid orangered; */
+  height: auto;
+  background-color: black;
+  color: #fff;
+  padding: 64px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer #uber {
+  font-size: 24px;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 0 56px;
+  /* border: 1px solid red; */
+}
+
+footer #visit {
+  width: 130px;
+  font-size: 16px;
+  padding: 0 56px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+footer #visit:after {
+  content: '';
+  width: 130px;
+  height: 0.5px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  visibility: hidden;
+}
+
+footer #visit:hover:after {
+  visibility: visible;
+}
+
+.footer-links-wrapper {
+  /* border: 1px solid yellow; */
+  margin: 80px 0;
+  padding: 0 56px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footer-links-wrapper ul {
+  list-style-type: none;
+}
+
+.footer-links-wrapper ul li {
+  margin: 15px 0;
+  font-size: 14px;
+  /* border: 1px solid red; */
+}
+
+.footer-links-wrapper ul li a:hover {
+  color: gray;
+}
+
+.footer-links-wrapper span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.icons-div {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  padding: 0 64px;
+}
+.first-div,
+.icons-div ul {
+  display: flex;
+  list-style: none;
+}
+.first-div {
+  /* border: 1px solid green; */
+  width: 60%;
+  justify-content: space-between;
+}
+
+.first-div ul {
+  /* border: 1px solid orange; */
+  height: 100%;
+}
+
+.first-div ul li {
+  font-size: 16px;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.first-div ul li:hover {
+  background-color: #333333;
+}
+
+.first-div ul li i {
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lang-loc-div {
+  width: 50%;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.lang-loc-div li {
+  margin-right: 30px;
+}
+
+.lang-loc-div li a {
+  display: flex;
+  align-items: center;
+  /* border: 3px solid purple; */
+  width: 40px;
+}
+
+.lang-loc-div .svg-div {
+  /* border: 3px solid blue; */
+  padding: 0 5px;
+  width: 150px;
+}
+
+.lang-loc-div .svg-div:hover {
+  background-color: #333333;
+}
+
+.lang-loc-div svg {
+  width: 15px;
+  height: 15px;
+  /* border: 1px solid red; */
+  margin-right: 10px;
+}
+
+.svg-div span {
+  font-size: 14px;
+}
+
+footer img {
+  width: 140px;
+  height: 47px;
+}
+
+.footer-last-div {
+  /* border: 1px solid pink; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding: 0 64px;
+  font-size: 14px;
+}
+
+.footer-last-right ul {
+  display: flex;
+}
+
+.footer-last-right ul li {
+  margin-left: 20px;
+  list-style: none;
+}
+
+/* ! Media Queries */
+
+@media (max-width: 1200px) {
+  .focused-on-safety {
+    /* border: 1px solid red; */
+    padding: 50px 75px;
+  }
+  .focused-on-safety .focused-div {
+    padding: 32px 16px;
+  }
+
+  .focus-on-container {
+    padding: 32px 80px;
+  }
+
+  .download-section .uber-div {
+    padding: 32px 0;
+  }
+}
+
+@media (max-width: 1080px) {
+  /* Navbar - Header */
+
+  header {
+    padding: 0 25px;
+  }
+
+  header .logo {
+    font-size: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+
+  .signup-button a {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 15px;
+  }
+
+  .login-icon {
+    display: block;
+    position: absolute;
+    right: 140px;
+  }
+
+  header nav {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    transition: 0.5s;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+    padding: 10px 0;
+  }
+
+  header nav.active {
+    height: 100vh;
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+    text-align: left;
+    /* border: 1px solid red; */
+    background-color: white;
+  }
+
+  header nav ul li a {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #000;
+    border-radius: 0;
+  }
+
+  header nav ul li a:hover {
+    background-color: rgb(221, 219, 219);
+  }
+
+  header nav ul li.sub-menu::before {
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  header nav ul li.active ul {
+    /* border: 1px solid blue; */
+    position: relative;
+    top: 0;
+    box-shadow: 0 0 0 0;
+  }
+
+  header nav ul li.active ul li a {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .li-with-icon a svg {
+    color: #000;
+  }
+
+  .li-with-icon a span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  header nav ul li.active ul li a:hover {
+    background-color: rgb(241, 238, 238);
+  }
+
+  header nav ul li ul li {
+    width: 100%;
+  }
+
+  #products-li {
+    background-color: #e2e2e2;
+    text-align: center;
+  }
+
+  #products-li a {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #products-li a:hover {
+    background-color: rgb(241, 238, 238);
+  }
+
+  #signup-button,
+  #login-icon {
+    display: none;
+  }
+
+  /* Alert Section */
+
+  .alert {
+    padding: 20px 20px;
+  }
+
+  .alert .btn-close {
+    right: -100px;
+  }
+
+  /*Banner Image Section */
+
+  .container-options {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 430px;
+  }
+  .options-div {
+    justify-content: flex-start;
+  }
+
+  .signup-div a {
+    float: left;
+  }
+
+  .image-div {
+    display: none;
+  }
+
+  .underline {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .focused-div div #link-div {
+    /* border: 3px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .focused-on-safety h2 {
+    font-size: 32px;
+  }
+
+  .column-wrapper {
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .download-section {
+    padding: 40px 60px;
+  }
+
+  .signup-section > div {
+    padding: 0 50px;
+  }
+
+  footer #uber,
+  footer #visit {
+    padding: 0;
+  }
+
+  .footer-links-wrapper {
+    /* border: 1px solid orange; */
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icons-div {
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .first-div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-last-div {
+    padding: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .focused-on-safety h2 {
+    padding-left: 32px;
+    font-size: 24px;
+  }
+
+  .focused-on-safety .focused-div {
+    /* border: 3px solid red; */
+    padding: 32px 0;
+    gap: 10px;
+  }
+
+  .focus-on-container {
+    padding: 32px 70px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .download-section .uber-div {
+    /* border: 5px solid orange; */
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .uber-div a img {
+    height: 75px;
+    width: 75px;
+  }
+
+  .sign {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-options {
+    height: auto;
+  }
+
+  .signup-div h1 {
+    font-size: 40px;
+  }
+
+  .underline {
+    clear: left;
+    margin-left: 0;
+    margin-top: -25px;
+  }
+
+  .focused-on-safety {
+    /* border: 1px solid red; */
+    padding: 50px 50px;
+  }
+
+  .focused-on-safety .focused-div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .focused-on-safety h2 {
+    padding-left: 0;
+    font-size: 24px;
+  }
+
+  .focus-on-container {
+    padding: 32px 48px;
+  }
+
+  .download-section {
+    padding: 40px 20px;
+  }
+
+  .signup-section > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .signup-section > div {
+    padding: 0 20px;
+    gap: 10px;
+  }
+
+  .signup-section a {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .footer-last-div {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container-options {
+    height: 650px;
+  }
+
+  .uber-for-business div a {
+    margin-top: 10px;
+  }
+
+  .focused-on-safety {
+    /* border: 1px solid red; */
+    padding: 25px 25px;
+  }
+
+  .alert {
+    height: auto;
+  }
+
+  .alert .btn-close {
+    right: -140px;
+  }
+
+  .focus-on-container {
+    padding: 32px;
+  }
+  .column {
+    min-width: 0;
+  }
+
+  .uber-div span {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 64px 32px;
+  }
+
+  .footer-links-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lang-loc-div {
+    /* border: 5px solid red; */
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .first-div {
+    width: 100%;
+  }
+  .footer-last-right ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-last-right ul li {
+    margin-bottom: 10px;
+  }
+}
