@@ -10,22 +10,19 @@
 /* ! Navbar - Header */
 
 header {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   padding: 0 100px;
   background: #000000;
   width: 100%;
-  height: 64px;
+  height: 4rem;
   display: flex;
   align-items: center;
 }
 
 header .logo {
   color: #fff;
-  height: 50px;
-  line-height: 50px;
-  font-size: 24px;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
 }
 
 nav {
@@ -48,9 +45,9 @@ header nav ul li {
 header nav ul li.sub-menu::before {
   content: '\f078';
   font-family: fontAwesome;
-  font-size: 12px;
+  font-size: 0.75rem;
   position: absolute;
-  line-height: 50px;
+  line-height: 3rem;
   color: #fff;
   top: -5px;
   right: 5px;
@@ -69,7 +66,6 @@ header nav ul li ul {
   display: none;
   transition: 1s;
   box-shadow: 0 0 10px 0px black;
-  /* overflow: scroll; */
 }
 
 header nav ul li.active ul {
@@ -91,8 +87,8 @@ header nav ul li ul li a:hover {
 }
 
 header nav ul li a {
-  height: 40px;
-  line-height: 40px;
+  height: 2.5rem;
+  line-height: 2.5rem;
   font-size: 14px;
   font-weight: 500;
   color: #fff;
@@ -130,7 +126,7 @@ header nav ul li a:hover {
 .menu-toggle {
   color: #fff;
   float: right;
-  line-height: 50px;
+  line-height: 3rem;
   font-size: 18px;
   cursor: pointer;
   display: none;
@@ -172,8 +168,7 @@ header nav ul li a:hover {
 /* ! Alert Bar */
 
 .alert {
-  /* border: 1px solid red; */
-  height: 186px;
+  height: auto;
   width: 100%;
   padding: 20px 180px;
   background-color: #eff3fe;
@@ -184,13 +179,13 @@ header nav ul li a:hover {
   font-size: 18px;
   font-family: 'Uber Move Text', Helvetica, sans-serif;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   color: #1e54c5;
 }
 
 .alert p {
   font-size: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
   color: #1e54c7;
 }
 
@@ -201,7 +196,7 @@ header nav ul li a:hover {
 }
 
 .alert .btn-close {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   margin-right: 150px;
   margin-top: 20px;
@@ -222,14 +217,14 @@ header nav ul li a:hover {
 
 .container-options {
   background-color: #fff;
-  height: 580px;
+  height: auto;
   width: 38%;
   position: absolute;
   top: 60px;
   left: 12%;
 }
 
-.image-div {
+.banner-image .image-div {
   height: 690px;
   background-image: url(https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1899,h_834/v1613521435/assets/bc/0529b6-c37a-416b-9907-2cb44c4c2888/original/Earner_Home_bg_desktop2x.png);
   background-position: center;
@@ -262,13 +257,13 @@ header nav ul li a:hover {
 
 .options-div div span {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1rem;
   font-weight: 500;
-  margin: 8px;
+  margin: 0.5rem;
 }
 
 .options-div div img {
-  height: 24px;
+  height: 1.5rem;
 }
 
 .options-div div:nth-child(1) {
@@ -276,7 +271,6 @@ header nav ul li a:hover {
 }
 
 .options-div div:nth-child(1)::after {
-  /* border-bottom: 5px solid black; */
   content: '';
   height: 5px;
   background-color: black;
@@ -287,23 +281,22 @@ header nav ul li a:hover {
 }
 
 .signup-div {
-  padding: 48px;
-  height: 422px;
-  /* border: 1px solid red; */
+  padding: 3rem;
+  height: auto;
 }
 
 .signup-div h1 {
   font-size: 52px;
   font-weight: bold;
-  line-height: 64px;
-  margin-bottom: 20px;
+  line-height: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .signup-div span {
-  font-size: 16px;
+  font-size: 1rem;
   font-size: 300;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .signup-div .signup {
@@ -311,11 +304,11 @@ header nav ul li a:hover {
   display: block;
   width: 160px;
   background-color: #000;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem; 
 }
 
 .underline {
@@ -343,14 +336,13 @@ header nav ul li a:hover {
 
 .uber-for-business {
   background-image: url(https://www.uber-assets.com/image/upload/v1613106985/assets/0e/47aa71-35cb-459a-a975-78c61ea300e2/original/HP-U4B-NYC-bkg.png);
-  height: 300px;
+  padding: 50px 0;
   width: 100%;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 5px solid orange; */
 }
 
 .uber-for-business div {
@@ -360,9 +352,9 @@ header nav ul li a:hover {
 }
 
 .uber-for-business div h2 {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 2.5rem;
 }
 
 .uber-for-business div a {
@@ -372,7 +364,7 @@ header nav ul li a:hover {
   text-decoration: none;
   display: block;
   width: 110px;
-  margin-top: 30px;
+  margin-top: 2rem;
   font-weight: bold;
   transition: 0.5s;
 }
@@ -385,43 +377,41 @@ header nav ul li a:hover {
 /* ! Focused On Safety Section */
 
 .focused-on-safety {
-  /* border: 1px solid red; */
   padding: 50px 125px;
 }
 
 .focused-on-safety h2 {
-  padding-left: 64px;
-  font-size: 36px;
+  padding-left: 4rem;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 
 .focused-on-safety .focused-div {
-  /* border: 1px solid yellow; */
-  padding: 32px 64px;
+  padding: 2rem 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
-.focused-div img {
+.focused-on-safety .focused-div img {
   width: 100%;
 }
 
-.focused-div h3 {
+.focused-on-safety .focused-div h3 {
   font-size: 18px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 1.5rem;
   margin: 20px 0 15px 0;
 }
 
-.focused-div p {
-  font-size: 16px;
-  margin-bottom: 40px;
+.focused-on-safety .focused-div p {
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
 }
 
-.focused-div a {
+.focused-on-safety .focused-div a {
   font-size: 14px;
-  margin-right: 20px;
+  margin-right: 2.5rem;
   color: black;
   text-decoration: none;
   padding: 5px 0;
@@ -429,7 +419,7 @@ header nav ul li a:hover {
   position: relative;
 }
 
-.focused-div a::after {
+.focused-on-safety .focused-div a::after {
   content: '';
   height: 1px;
   background: #000;
@@ -440,7 +430,7 @@ header nav ul li a:hover {
   width: 0;
 }
 
-.focused-div a:hover::after {
+.focused-on-safety .focused-div a:hover::after {
   width: 100%;
 }
 
@@ -448,29 +438,26 @@ header nav ul li a:hover {
 
 .focus-on-container {
   height: auto;
-  /* background: yellow; */
   padding: 32px 180px;
 }
 
 .column-wrapper {
-  /* border: 3px solid orange; */
   display: flex;
 }
 
 .column {
-  /* border: 1px solid red; */
   min-width: 270px;
 }
 
 .column h5 {
   font-size: 18px;
   font-weight: bold;
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 
 .column p {
-  font-size: 16px;
-  margin-bottom: 30px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 .column a {
@@ -499,18 +486,16 @@ header nav ul li a:hover {
 
 .download-section {
   padding: 40px 180px;
-  /* border: 1px solid red; */
   background-color: rgba(128, 128, 128, 0.1);
 }
 
 .download-section h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
 }
 
 .download-section .uber-div {
-  /* border: 1px solid blue; */
-  padding: 32px 0;
+  padding: 2rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
@@ -535,19 +520,16 @@ header nav ul li a:hover {
 }
 
 .uber-div span {
-  font-size: 24px;
-  margin-right: 20px;
-  /* border: 1px solid red; */
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
 }
 
 .uber-div i {
-  /* color:red; */
-  font-size: 24px;
+  font-size: 1.5rem;
   transition: 0.5s;
 }
 
 .uber-div a:hover i {
-  /* color: red; */
   margin-left: 10px;
 }
 
@@ -557,23 +539,19 @@ header nav ul li a:hover {
   padding: 0 180px;
   background-color: #fff;
   height: 213px;
-  /* border: 3px solid red; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
 .signup-section a {
-  /* border: 1px solid red; */
   width: 100%;
   text-decoration: none;
   color: #000;
-  /* border: 3px solid yellow; */
   padding: 40px 0;
 }
 
 .signup-section .div-signup {
-  /* border: 3px solid blue; */
   width: 100%;
   height: 100%;
   padding: 0 20px;
@@ -584,18 +562,17 @@ header nav ul li a:hover {
 }
 
 .sign {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
 }
 
 /* ! Footer */
 
 footer {
-  /* border: 3px solid orangered; */
   height: auto;
   background-color: black;
   color: #fff;
-  padding: 64px;
+  padding: 4rem;
 }
 
 footer a {
@@ -604,19 +581,17 @@ footer a {
 }
 
 footer #uber {
-  font-size: 24px;
+  font-size: 1.5rem;
   display: block;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding: 0 56px;
-  /* border: 1px solid red; */
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  padding: 0 3.5rem;
 }
 
 footer #visit {
   width: 130px;
-  font-size: 16px;
-  padding: 0 56px;
-  /* border: 1px solid red; */
+  font-size: 1rem;
+  padding: 0 3.5rem;
   position: relative;
 }
 
@@ -636,9 +611,8 @@ footer #visit:hover:after {
 }
 
 .footer-links-wrapper {
-  /* border: 1px solid yellow; */
   margin: 80px 0;
-  padding: 0 56px;
+  padding: 0 3.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -651,7 +625,6 @@ footer #visit:hover:after {
 .footer-links-wrapper ul li {
   margin: 15px 0;
   font-size: 14px;
-  /* border: 1px solid red; */
 }
 
 .footer-links-wrapper ul li a:hover {
@@ -666,8 +639,7 @@ footer #visit:hover:after {
 .icons-div {
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid red; */
-  padding: 0 64px;
+  padding: 0 4rem;
 }
 .first-div,
 .icons-div ul {
@@ -675,20 +647,18 @@ footer #visit:hover:after {
   list-style: none;
 }
 .first-div {
-  /* border: 1px solid green; */
   width: 60%;
   justify-content: space-between;
 }
 
 .first-div ul {
-  /* border: 1px solid orange; */
   height: 100%;
 }
 
 .first-div ul li {
-  font-size: 16px;
-  width: 48px;
-  height: 48px;
+  font-size: 1rem;
+  width: 3rem;
+  height: 3rem;
   position: relative;
   transition: 0.5s;
 }
@@ -713,18 +683,16 @@ footer #visit:hover:after {
 }
 
 .lang-loc-div li {
-  margin-right: 30px;
+  margin-right: 2rem;
 }
 
 .lang-loc-div li a {
   display: flex;
   align-items: center;
-  /* border: 3px solid purple; */
   width: 40px;
 }
 
 .lang-loc-div .svg-div {
-  /* border: 3px solid blue; */
   padding: 0 5px;
   width: 150px;
 }
@@ -736,7 +704,6 @@ footer #visit:hover:after {
 .lang-loc-div svg {
   width: 15px;
   height: 15px;
-  /* border: 1px solid red; */
   margin-right: 10px;
 }
 
@@ -750,12 +717,11 @@ footer img {
 }
 
 .footer-last-div {
-  /* border: 1px solid pink; */
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
-  padding: 0 64px;
+  padding: 0 4rem;
   font-size: 14px;
 }
 
@@ -772,19 +738,18 @@ footer img {
 
 @media (max-width: 1200px) {
   .focused-on-safety {
-    /* border: 1px solid red; */
     padding: 50px 75px;
   }
   .focused-on-safety .focused-div {
-    padding: 32px 16px;
+    padding: 2rem 1rem;
   }
 
   .focus-on-container {
-    padding: 32px 80px;
+    padding: 2rem 5rem;
   }
 
   .download-section .uber-div {
-    padding: 32px 0;
+    padding: 2rem 0;
   }
 }
 
@@ -837,12 +802,11 @@ footer img {
   header nav ul {
     display: block;
     text-align: left;
-    /* border: 1px solid red; */
     background-color: white;
   }
 
   header nav ul li a {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 30px;
     color: #000;
     border-radius: 0;
@@ -854,12 +818,11 @@ footer img {
 
   header nav ul li.sub-menu::before {
     color: #000;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
   }
 
   header nav ul li.active ul {
-    /* border: 1px solid blue; */
     position: relative;
     top: 0;
     box-shadow: 0 0 0 0;
@@ -933,7 +896,7 @@ footer img {
     float: left;
   }
 
-  .image-div {
+  .banner-image .image-div {
     display: none;
   }
 
@@ -943,13 +906,12 @@ footer img {
   }
 
   .focused-div div #link-div {
-    /* border: 3px solid red; */
     display: flex;
     flex-wrap: wrap;
   }
 
   .focused-on-safety h2 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .column-wrapper {
@@ -975,7 +937,6 @@ footer img {
   }
 
   .footer-links-wrapper {
-    /* border: 1px solid orange; */
     padding: 0;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -998,13 +959,12 @@ footer img {
 
 @media (max-width: 850px) {
   .focused-on-safety h2 {
-    padding-left: 32px;
-    font-size: 24px;
+    padding-left: 2rem;
+    font-size: 1.5rem;
   }
 
   .focused-on-safety .focused-div {
-    /* border: 3px solid red; */
-    padding: 32px 0;
+    padding: 2rem 0;
     gap: 10px;
   }
 
@@ -1017,7 +977,6 @@ footer img {
   }
 
   .download-section .uber-div {
-    /* border: 5px solid orange; */
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -1027,7 +986,7 @@ footer img {
   }
 
   .sign {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
@@ -1037,7 +996,7 @@ footer img {
   }
 
   .signup-div h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .underline {
@@ -1047,7 +1006,6 @@ footer img {
   }
 
   .focused-on-safety {
-    /* border: 1px solid red; */
     padding: 50px 50px;
   }
 
@@ -1057,15 +1015,15 @@ footer img {
 
   .focused-on-safety h2 {
     padding-left: 0;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .focus-on-container {
-    padding: 32px 48px;
+    padding: 2rem 3rem;
   }
 
   .download-section {
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
   }
 
   .signup-section > div {
@@ -1079,7 +1037,7 @@ footer img {
 
   .signup-section a {
     padding: 0;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .footer-last-div {
@@ -1098,7 +1056,6 @@ footer img {
   }
 
   .focused-on-safety {
-    /* border: 1px solid red; */
     padding: 25px 25px;
   }
 
@@ -1111,18 +1068,18 @@ footer img {
   }
 
   .focus-on-container {
-    padding: 32px;
+    padding: 2rem;
   }
   .column {
     min-width: 0;
   }
 
   .uber-div span {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   footer {
-    padding: 64px 32px;
+    padding: 4rem 2rem;
   }
 
   .footer-links-wrapper {
@@ -1130,7 +1087,6 @@ footer img {
   }
 
   .lang-loc-div {
-    /* border: 5px solid red; */
     flex-direction: column;
     width: 100%;
     padding: 0;
